@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.8;
+    color: #0f172a;
+    background-color: #f8fafc;
+    padding: 30px 15px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 19px; /* Facilita a leitura em telão/projetor */
+}
+
+/* Esconde a linha hr para dar lugar ao layout limpo de cards */
+hr {
+    display: none;
+}
+
+/* Badge Superior */
+.badge {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+/* Cabeçalho Hero */
+#cabecalho {
+    background: linear-gradient(135deg, #065f46 0%, #047857 50%, #022c22 100%);
+    color: #ffffff;
+    padding: 45px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15);
+    margin-bottom: 35px;
+}
+
+#cabecalho h1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+#cabecalho p {
+    font-size: 1.15rem;
+    color: #ecfdf5;
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+}
+
+/* Navegação Rápida */
+.nav-rapida {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.nav-rapida a {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.nav-rapida a:hover {
+    background: #ffffff;
+    color: #065f46;
+}
+
+/* Cards de Conteúdo */
+.card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    margin-bottom: 35px;
+    border: 1px solid #cbd5e1;
+}
+
+h2 {
+    color: #065f46;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.subtitulo {
+    color: #475569;
+    margin-bottom: 25px;
+    font-size: 1.05rem;
+}
+
+h3 {
+    color: #0f172a;
+    font-size: 1.35rem;
+    margin: 30px 0 15px 0;
+    border-left: 4px solid #10b981;
+    padding-left: 10px;
+}
+
+/* Listas Estilizadas */
+.lista-destaque {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.lista-destaque li {
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    background: #f1f5f9;
+    border-radius: 8px;
+    border-left: 4px solid #059669;
+}
+
+.roteiro-passos {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.roteiro-passos li {
+    padding-left: 10px;
+    margin-bottom: 12px;
+}
+
+/* Bloco da Imagem */
+.bloco-imagem {
+    background-color: #f8fafc;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 30px 0;
+    border: 1px solid #e2e8f0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+/* Link de Destaque */
+.link-oficial {
+    margin-top: 20px;
+    font-size: 1.05rem;
+}
+
+.link-oficial a {
+    color: #059669;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.link-oficial a:hover {
+    text-decoration: underline;
+}
+
+/* Tabela Estilizada */
+.tabela-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid #cbd5e1;
+}
+
+th, td {
+    padding: 18px;
+    text-align: left;
+    border-bottom: 1px solid #cbd5e1;
+}
+
+thead th {
+    background-color: #065f46;
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+tfoot tr {
+    background-color: #e2e8f0;
+    font-size: 1.1rem;
+}
+
+tfoot td {
+    border-bottom: none;
+    color: #0f172a;
+}
+
+/* Formulário Moderno */
+form p {
+    margin-bottom: 22px;
+}
+
+label {
+    font-weight: 700;
+    color: #1e293b;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #94a3b8;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    background-color: #ffffff;
+    color: #0f172a;
+    outline: none;
+    transition: all 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #059669;
+    box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.2);
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #059669;
+    color: white;
+    padding: 18px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #047857;
+}
+
+/* Rodapé */
+#rodape {
+    text-align: center;
+    color: #64748b;
+    font-size: 1rem;
+    padding: 20px 0;
+}
