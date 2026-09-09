@@ -8,28 +8,27 @@
 </head>
 <body>
 
-    <!-- 8. Divisões de conteúdo usando a tag <div> para estruturar a página -->
-    
-    <!-- Cabeçalho da Página -->
+    <!-- Cabeçalho Principal (Hero) -->
     <div id="cabecalho">
-        <!-- 1. Título principal (h1) -->
+        <span class="badge">TURISMO BRASIL</span>
         <h1>Guia de Viagem: Conhecendo Curitiba</h1>
-        <!-- 2. Parágrafos de texto -->
         <p>Curitiba é famosa por suas áreas verdes, transporte organizado e clima marcante. Este portal traz dicas essenciais para quem deseja planejar uma visita à cidade.</p>
+        
+        <!-- Menu de Navegação Rápida -->
+        <div class="nav-rapida">
+            <a href="#dicas-roteiro">Dicas & Roteiro</a>
+            <a href="#orcamento">Estimativa de Gastos</a>
+            <a href="#contato-duvidas">Dúvidas</a>
+        </div>
     </div>
 
-    <hr>
-
-    <!-- Seção de Dicas e Roteiro -->
-    <div id="dicas-roteiro">
-        <!-- 1. Subtítulo (h2) -->
+    <!-- Card 1: Dicas e Roteiro -->
+    <div id="dicas-roteiro" class="card">
         <h2>O que Fazer na Cidade</h2>
-        <p>A capital paranaense oferece opções para todos os gostos, desde passeios ao ar livre até visitas culturais.</p>
+        <p class="subtitulo">A capital paranaense oferece opções para todos os gostos, desde passeios ao ar livre até visitas culturais.</p>
 
-        <!-- 1. Subtítulo (h3) -->
         <h3>Pontos Turísticos Imperdíveis</h3>
-        <!-- 5. Lista Não Ordenada <ul> -->
-        <ul>
+        <ul class="lista-destaque">
             <li><strong>Jardim Botânico:</strong> O cartão-postal da cidade, famoso por sua estufa de vidro.</li>
             <li><strong>Parque Tanguá:</strong> Excelente local para apreciar o pôr do sol no mirante.</li>
             <li><strong>Museu Oscar Niemeyer (MON):</strong> Conhecido como o "Museu do Olho", com exposições de arte.</li>
@@ -37,96 +36,85 @@
         </ul>
 
         <h3>Roteiro Recomendado de 3 Dias</h3>
-        <!-- 5. Lista Ordenada <ol> -->
-        <ol>
+        <ol class="roteiro-passos">
             <li>Visitar o Jardim Botânico pela manhã e almoçar no Mercado Municipal.</li>
             <li>Fazer o passeio no Museu Oscar Niemeyer e ver o pôr do sol no Parque Tanguá.</li>
             <li>Conhecer o centro histórico e fechar o dia na Ópera de Arame.</li>
         </ol>
 
-        <!-- 4. Imagem com uso do atributo alt -->
-        <h3>Estufa do Jardim Botânico</h3>
-        <p>Veja uma foto da atração mais famosa da cidade:</p>
-        <img src="https://imgs.search.brave.com/5kc6ANjKVPvcdd_t1nSDe3y3pVCq1TiDR7Stn0aiwgw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ibG9n/LmJsYWJsYWNhci5j/b20uYnIvd3AtY29u/dGVudC91cGxvYWRz/LzIwMjQvMDcvamFy/ZGltYm90YW5pY29j/dXJpdGliYS5qcGc" width="600">
+        <!-- Bloco de Imagem com Link Direto e Seguro -->
+        <div class="bloco-imagem">
+            <h3>Estufa do Jardim Botânico</h3>
+            <p>Veja uma foto da atração mais famosa da cidade:</p>
+            <img src="https://imgs.search.brave.com/txJiw19f3WCGqN9EBtm_1PzbPVrkdjBsuqLzddsXfdU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9ibG9n/LmJsYWJsYWNhci5j/b20uYnIvd3AtY29u/dGVudC91cGxvYWRz/LzIwMjQvMDcvamFy/ZGltYm90YW5pY29j/dXJpdGliYS5qcGc" alt="Estufa de vidro do Jardim Botânico de Curitiba cercada pelos jardins">
+        </div>
 
-        <!-- 3. Link externo -->
-        <p>
+        <p class="link-oficial">
             Para consultar horários atualizados e rotas oficiais, acesse o 
-            <a href="https://turismo.curitiba.pr.gov.br" target="_blank">Portal Oficial de Turismo de Curitiba</a>.
+            <a href="https://turismo.curitiba.pr.gov.br" target="_blank" rel="noopener noreferrer">Portal Oficial de Turismo de Curitiba &rarr;</a>
         </p>
     </div>
 
-    <hr>
-
-    <!-- Seção de Tabela de Estimativa de Gastos -->
-    <div id="orcamento">
+    <!-- Card 2: Gastos -->
+    <div id="orcamento" class="card">
         <h2>Estimativa de Gastos por Pessoa</h2>
-        <p>Confira uma média de custos diários para ajudar no seu planejamento financeiro:</p>
+        <p class="subtitulo">Confira uma média de custos diários para ajudar no seu planejamento financeiro:</p>
 
-        <!-- 6. Tabela com <thead>, <tbody>, <tfoot>, 3 colunas e 3 linhas -->
-        <table border="1" cellpadding="8" cellspacing="0">
-            <!-- Cabeçalho da tabela -->
-            <thead>
-                <tr>
-                    <th>Categoria</th>
-                    <th>Opção Simples</th>
-                    <th>Opção Conforto</th>
-                </tr>
-            </thead>
-            <!-- Corpo da tabela -->
-            <tbody>
-                <tr>
-                    <td>Hospedagem (Diária)</td>
-                    <td>R$ 110,00</td>
-                    <td>R$ 280,00</td>
-                </tr>
-                <tr>
-                    <td>Alimentação (Diária)</td>
-                    <td>R$ 60,00</td>
-                    <td>R$ 140,00</td>
-                </tr>
-                <tr>
-                    <td>Transporte / Passeios</td>
-                    <td>R$ 25,00</td>
-                    <td>R$ 70,00</td>
-                </tr>
-            </tbody>
-            <!-- Rodapé da tabela -->
-            <tfoot>
-                <tr>
-                    <td><strong>Total Estimado / Dia</strong></td>
-                    <td><strong>R$ 195,00</strong></td>
-                    <td><strong>R$ 490,00</strong></td>
-                </tr>
-            </tfoot>
-        </table>
+        <div class="tabela-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>Opção Simples</th>
+                        <th>Opção Conforto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hospedagem (Diária)</td>
+                        <td>R$ 110,00</td>
+                        <td>R$ 280,00</td>
+                    </tr>
+                    <tr>
+                        <td>Alimentação (Diária)</td>
+                        <td>R$ 60,00</td>
+                        <td>R$ 140,00</td>
+                    </tr>
+                    <tr>
+                        <td>Transporte / Passeios</td>
+                        <td>R$ 25,00</td>
+                        <td>R$ 70,00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total Estimado / Dia</td>
+                        <td>R$ 195,00</td>
+                        <td>R$ 490,00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
     </div>
 
-    <hr>
-
-    <!-- Seção de Formulário de Dúvidas -->
-    <div id="contato-duvidas">
+    <!-- Card 3: Formulário -->
+    <div id="contato-duvidas" class="card">
         <h2>Dúvidas sobre a Viagem?</h2>
-        <p>Preencha os dados abaixo para receber nosso e-book com dicas e tirar suas dúvidas:</p>
+        <p class="subtitulo">Preencha os dados abaixo para receber nosso e-book com dicas e tirar suas dúvidas:</p>
 
-        <!-- 7. Formulário com <form> -->
         <form action="#" method="post">
-            
-            <!-- Campo de Texto -->
             <p>
-                <label for="nome">Seu Nome:</label><br>
+                <label for="nome">Seu Nome:</label>
                 <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
             </p>
 
-            <!-- Campo de E-mail -->
             <p>
-                <label for="email">Seu E-mail:</label><br>
+                <label for="email">Seu E-mail:</label>
                 <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
             </p>
 
-            <!-- Campo de Seleção (Dropdown) -->
             <p>
-                <label for="estilo">Qual é a sua principal prioridade na viagem?</label><br>
+                <label for="estilo">Qual é a sua principal prioridade na viagem?</label>
                 <select id="estilo" name="estilo">
                     <option value="">-- Selecione uma opção --</option>
                     <option value="natureza">Parques e Natureza</option>
@@ -135,15 +123,11 @@
                 </select>
             </p>
 
-            <!-- Botão de Envio -->
             <p>
                 <button type="submit">Enviar Dúvida</button>
             </p>
-
         </form>
     </div>
-
-    <hr>
 
     <!-- Rodapé -->
     <div id="rodape">
